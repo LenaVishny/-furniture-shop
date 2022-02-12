@@ -1,0 +1,186 @@
+body{
+    background-color: bisque;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+}
+h1, h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    
+}
+.one{
+    background-image: url('1.jpeg');
+}
+.two{
+    background-image: url('2.jpeg');
+}
+.three{
+    background-image:url('3.jpeg');
+}
+.four{
+    background-image:url('4.jpeg') ;
+}
+.five{
+    background-image: url('5.jpeg');
+}
+.six{
+    background-image:url('6.jpeg') ;
+}
+.item{
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Dancing Script', cursive;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+}
+h4{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background-color: #fff;
+    color: #000;
+    font-size: 0;
+}
+.par{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    background-color: #fff;
+    color: black;
+    font-size: 0;
+}
+.price{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background-color: #fff;
+    color: black;
+    font-size: 0;
+}
+.selected{
+    flex: 4;
+}
+.selected h4{
+    font-size: 40px;
+    transition: all 1s ease-in;
+}
+.selected .par{
+    font-size: 20px;
+    transition: all 1s ease-in;
+}
+.selected .price{
+    font-size: 35px;
+    transition: all 1s ease-in;
+}
+label{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.text-input{
+    background-color: bisque;
+    border: none;
+    padding: 12px 20px;
+}
+.btn {
+    background-color: #00adb5;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    flex: 1;
+    }
+.containerDay{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.opening{
+    background-color: rgb(252, 209, 158, 0.9);
+    height: 200px;
+    width: 150px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 20px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.word{
+    font-size: 25px;
+}
+.days, .hours, .minutes, .seconds{
+    font-size: 30px;
+    font-family:'Dancing Script', cursive; 
+}
+.opened{
+    font-size: 70px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: rgb(243, 26, 109);
+    transition: all 1s ease;
+}
+.music{
+    margin-left: 45%;
+    border: none;
+    
+}
+    @media all and (max-width: 800px){
+        .opened{
+            font-size: 50px;
+        }
+    }
+
+    @media all and (max-width: 500px){
+        h1, h3 {
+            font-size: 30px;
+        }
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+        .container { 
+            display : flex ; 
+            flex-direction : column ; 
+            height: 100vh;
+        }
+        .selected h4, .selected .par {
+            left: 20px;
+            font-size: 20px;
+        }
+        .selected .price {
+            bottom: 10px;
+            left: 20px;
+            font-size: 15px;
+        }
+        .opened{
+            font-size: 30px;
+        }
+        .opening{
+            height: 120px;
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        .days, .hours, .minutes, .seconds{
+            font-size: 20px;
+        }
+        .word{
+            font-size: 15px;
+        }
+        .music{
+            width: 50px;
+            height: 50px;
+            margin-left: 40%;
+        }
+    }

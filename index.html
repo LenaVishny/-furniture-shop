@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture shop</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="myAudio" src="minelli-rampampam.mp3" loop = "loop" autoplay = "allowed"></audio>
+    <button class="music"><img src="https://img.icons8.com/bubbles/100/000000/google-play-music.png" alt="button"></button>
+    
+    <div class="heading">
+        <img class="logo" src="11.jpg" alt="logo">
+        <h1>Before the store opens ...</h1>
+    </div>
+    <div class="containerDay">
+        <div class="opening">
+            <div class="block">
+                <h2 class="days"></h2>
+                <h3 class="word">DAYS</h3>
+            </div>
+        </div>
+        <div class="opening">
+            <div class="block">
+                <h2 class="hours"></h2>
+                <h3 class="word">HOURS</h3>
+            </div>
+        </div>
+        <div class="opening">
+            <div class="block">
+                <h2 class="minutes"></h2>
+                <h3 class="word">MINUTES</h3>
+            </div>
+        </div>
+        <div class="opening">
+            <div class="block">
+                <h2 class="seconds"></h2>
+                <h3 class="word">SECONDS</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item one selected">
+            <h4>Berta</h4>
+            <p class="par">interchangeable sectional sofa-bed with storage</p>
+            <p class="price">5000$</p>
+        </div>
+        <div class="item two">
+            <h4>Belgavia</h4>
+            <p class="par">sofa-bed with memory foam  mattress</p>
+            <p class="price">2000$</p>
+        </div>
+        <div class="item three">
+            <h4>Foodie</h4>
+            <p class="par">recyclrd teak end table</p>
+            <p class="price">1000$</p>
+        </div>
+        <div class="item four">
+            <h4>Family</h4>
+            <p class="par">acacia wood dining table</p>
+            <p class="price">2500$</p>
+        </div>
+        <div class="item five">
+            <h4>Shear</h4>
+            <p class="par">tufted velvet sofa-bed</p>
+            <p class="price">2100$</p>
+        </div>
+        <div class="item six">
+            <h4>Robia</h4>
+            <p class="par">tufted upholstered wingback queen size bed with storage</p>
+            <p class="price">5000$</p>
+        </div>
+    </div>
+    <div class="heading">
+        <h3>Send us a message!</h3>
+    </div>
+    <form
+    action="https://formspree.io/f/xvodjoeq"
+    method="POST"
+    >
+    <div class="heading">
+    <label>
+        Your email:
+        <input type="email" class="text-input" name="_replyto" placeholder="Your email..." required="">
+    </label>
+    </div>
+    <div class="heading">
+    <label>
+        Your message:
+        <textarea class="text-input" name="message" placeholder="Type your message..." required=""></textarea>
+    </label>
+    </div>
+    <br>
+    <!-- your other form fields go here -->
+    <div class="heading">
+    <button class="btn" type="submit">Send</button>
+    </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
